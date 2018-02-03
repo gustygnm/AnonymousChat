@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.anonymouschat.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="5dp"
+            android:id="@+id/btnPickColor"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_pen" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tulis Pesan"
+            android:id="@+id/editStatus"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/btnSend"
+            android:layout_width="50dp"
+            android:padding="5dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_action_name" />
+    </LinearLayout>
+
+</LinearLayout>
